@@ -2,7 +2,7 @@ import { Wave } from './wave.js'
 
 export class WaveGroup {
   constructor() {
-    this.totalWaves = 3
+    this.totalWaves = 4
     this.totalPoints = 6
     this.color = [
       'rgba(0, 199, 235, 0.3)',
