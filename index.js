@@ -2,9 +2,8 @@ import { WaveGroup } from './wavegroup.js'
 
 class App {
   constructor() {
-    this.canvas = document.createElement('canvas')
+    this.canvas = document.querySelector('#canvas')
     this.ctx = this.canvas.getContext('2d')
-    document.body.appendChild(this.canvas)
     this.waveGroup = new WaveGroup()
     window.addEventListener('resize', this.resize.bind(this), false)
     this.resize()
@@ -27,6 +26,4 @@ class App {
   }
 }
 
-window.onload = () => {
-  new App()
-}
+new App()
