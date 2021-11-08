@@ -12,24 +12,33 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgb(130, 196, 223) 75%, white);
 }
 
 header {
   display: grid;
   place-items: center;
+  background-color: #82c4e0;
 }
 
-.ozono {
-  text-align: center;
-  width: 251px; /*642px default*/
-  height: 125px; /*350px default*/
-  margin: 10px;
+.ozonoImagenContainer {
+  padding: 1rem;
+  display: grid;
+  place-items: center; /* Centrar el contenido */
+}
+
+.ozonoImagen {
+  /* Acá tenias seteado ancho y alto.
+  Eso no es recomendable porque afectas la relacion
+  de aspecto de la imagen. Lo ideal es que la imagen
+  tenga un ancho dinamico y la altura original.
+  Para que el padre (contenedor) se ajuste a la imagen.
+  */
+  width: 45%;
 }
 
 nav {
-  padding: 1rem;
+  /* Comente el padding porque el nav está vacio */
+  /* padding: 1rem; */
 }
 
 ul {
@@ -53,22 +62,25 @@ canvas {
 }
 
 main {
-  background: linear-gradient(to top, rgb(215, 215, 215), white);
+  /* Me parece que es mas facil poner white y listo.
+  Se carga la GPU solo para un gradiente que tiene practicamente los mismos colores */
+  /* background: linear-gradient(to top, rgb(215, 215, 215), white); */
   width: cover;
   height: 100vh;
   padding: 1rem;
   margin: 0;
 }
 
-.terapia {
-  /*
-  margin-left: auto;
-  margin-right: auto;
-  */
-  /* vertical-align: middle; */
-  /* text-align: center; */
-  width: 525px;
-  height: 500px;
+.terapiaImagenContainer {
+  display: grid;
+  place-items: center; /* Alineamos el contenido */
+  padding: 2rem; /* Le da un poco de espaciado alrededor */
+}
+
+.terapiaImagen {
+  width: 100%;
+  max-width: 31.25rem; /* ~ 500px */
+  border-radius: 0.3rem; /* ~ 5px */
 }
 
 h1 {
@@ -76,8 +88,8 @@ h1 {
   padding: 0;
   text-align: center;
   font-size: 2rem;
-  text-shadow: -1px -1px 1px #aaa, 0px 1px 1px rgba(0, 0, 0, 0.5),
-    3px 3px 5px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+  text-shadow: -1px -1px 1px #aaa, 0px 1px 1px rgba(0, 0, 0, 0.5), 3px 3px 5px rgba(0, 0, 0, 0.2),
+    0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 
 p {
