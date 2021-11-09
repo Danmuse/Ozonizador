@@ -79,8 +79,9 @@ main {
 
 .prototypeContainer {
   display: grid;
-  place-items: center;
   padding: 1rem; /* Le da un poco de espaciado alrededor */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  place-items: center;
 }
 
 .prototypeImagen,
