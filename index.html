@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="https://drive.google.com/uc?export=view&id=1e7q_A7GFoDGftOkDvbt8Qz08I4k7Rcrn"
-    />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/React.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Ozonizador</title>
     <script type="module" src="./index.js"></script>
@@ -16,8 +12,9 @@
     <header>
       <picture class="ozonoImagenContainer">
         <img
+          loading="lazy"
           class="ozonoImagen"
-          src="https://drive.google.com/uc?export=view&id=1JOmtJyGvkMaM84TQnxeDgqj8TIEa7IFu"
+          src="./assets/Ozono.png"
           alt="Logo header"
         />
       </picture>
@@ -48,8 +45,9 @@
         </p>
         <picture class="terapiaImagenContainer">
           <img
+            loading="lazy"
             class="terapiaImagen"
-            src="https://drive.google.com/uc?export=view&id=1jxeRbkCFQ7WiltjfluA0zJvVgpHNXlwu"
+            src="./assets/Ozonoterapia.jpg"
             alt="Explicacion de la ozonoterapia"
           />
         </picture>
@@ -68,30 +66,37 @@
           es perjudicial para las vías respiratorias.
         </p>
         <h1>Desarrollo y Prototipado</h1>
-        <picture class="prototypeContainer">
-          <img
-            class="prototypeImagen"
-            src="https://drive.google.com/uc?export=view&id=1Q0_rg3dW7w-wfmtdjOcJ4Z4WaCv-teab"
-            alt="Prototipo"
-          />
-          <img
-            class="boardImagen"
-            src="https://drive.google.com/uc?export=view&id=1y5El2wzUD-J2PN1mmBnR__1ubj0uuLxM"
-            alt="Placa Electrónica"
-          />
-        </picture>
+        <div class="picturesContainer">
+          <picture>
+            <img
+              loading="lazy"
+              class="prototypeImagen"
+              src="./assets/Prototipo.png"
+              alt="Prototipo"
+            />
+          </picture>
+          <picture>
+            <img
+              loading="lazy"
+              class="boardImagen"
+              src="./assets/Placa.png"
+              alt="Placa Electrónica"
+            />
+          </picture>
+        </div>
         <h1>Producto</h1>
-        <div class="productContainer">
-          <img
-            class="productImagen"
-            src="https://drive.google.com/uc?export=view&id=1nHvstd0rmnXrTDZmvEg9H1LMpM5L3g4p"
-            alt="Prototipo"
-          />
-          <iframe
-            class="productVideo"
-            src="https://drive.google.com/uc?export=view&id=1G9mLwPnUFfCtrN44QusjZQKAcFBk08nl"
-            allowfullscreen
-          ></iframe>
+        <div class="picturesContainer">
+          <picture>
+            <img
+              loading="lazy"
+              class="productImagen"
+              src="./assets/Producto.png"
+              alt="Producto"
+            />
+          </picture>
+          <video controls class="productVideo" allowfullscreen>
+            <source src="./assets/VideoDemostracion.mp4" />
+          </video>
         </div>
         <h1>Servicios Postventa</h1>
         <p>
