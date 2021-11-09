@@ -17,7 +17,8 @@ body {
 header {
   display: grid;
   place-items: center;
-  background: linear-gradient(to top, rgb(130, 196, 223) 60%, white);
+  /* background: linear-gradient(to top, rgb(130, 196, 223) 60%, white); */
+  background: rgb(130, 196, 223);
 }
 
 .ozonoImagenContainer {
@@ -50,7 +51,7 @@ li {
 
 canvas {
   width: 100%;
-  height: 125px;
+  height: 10rem;
   display: block;
   transform: rotate(180deg);
   background-color: white;
@@ -72,8 +73,8 @@ main {
 .terapiaImagen {
   width: 100%;
   max-width: 31.25rem; /* ~ 500px */
-  border: 2px solid;
-  border-radius: 0.5rem;
+  border: 3px solid;
+  border-radius: 0.8rem;
 }
 
 .prototypeContainer {
@@ -89,8 +90,26 @@ main {
   max-width: 31.25rem; /* ~ 500px */
 }
 
+.productContainer {
+  display: grid;
+  place-items: center;
+  padding: 1rem; 
+}
+
+.productImagen {
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.productVideo {
+  margin: 5px;
+  width: 100%;
+  max-width: 31.25rem; 
+  height: 17rem;
+} 
+
 h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
@@ -99,8 +118,8 @@ h1 {
 }
 
 p {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   margin: 1.2rem;
   text-align: justify;
   font-family: Helvetica, 'Times New Roman', sans-serif;
