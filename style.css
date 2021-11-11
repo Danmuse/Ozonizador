@@ -16,7 +16,7 @@ body {
 header {
   display: grid;
   place-items: center;
-  background: linear-gradient(to top, white,  rgba(180, 210, 240, 0.8) 50%, white);
+  background: linear-gradient(to top, white,  rgb(160, 210, 240) 50%, white);
 }
 
 .social-sidebar {
