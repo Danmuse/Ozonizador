@@ -43,7 +43,7 @@ header {
   color: white;
 }
 
-#list-item-twitter {
+#list-item-whatsapp {
   background-color: #58c76a;
 }
 
@@ -51,7 +51,7 @@ header {
   background-color: #1da0f2;
 }
 
-#list-item-twitch {
+#list-item-github {
   background-color: #9146ff;
 }
 
@@ -61,7 +61,7 @@ header {
 
 @media (hover) {
   .list-item-link:hover {
-    background-color: coral;
+    border-radius: 0 3px 3px 0;
     width: 4.2rem; /* Aca le cambia el width 
     cuando está en hover */
   }
@@ -153,6 +153,7 @@ h2 {
 p {
   padding: 0 1.2rem;
   margin: 1.2rem;
+  text-align: left;
   font-family: Helvetica, 'Times New Roman', sans-serif;
   line-height: 20px;
   text-indent: 40px;
