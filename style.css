@@ -105,9 +105,9 @@ main {
 
 .terapiaImagen {
   width: 100%;
-  box-shadow: 0px 0px 15px 1px black;
+  box-shadow: 0px 0px 10px 0px black;
   max-width: 31.25rem; /* ~ 500px */
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
 }
 
 .picturesContainer {
