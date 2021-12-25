@@ -16,7 +16,7 @@ body {
 header {
   display: grid;
   place-items: center;
-  background: linear-gradient(to bottom, white,  rgb(160, 210, 240) 50%, white);
+  background: linear-gradient(to bottom, white, rgb(160, 210, 240) 50%, white);
 }
 
 .social-sidebar {
@@ -136,6 +136,10 @@ main {
 
 .productVideo {
   width: 100%;
+}
+
+.bigSize {
+  font-size: 1.2rem; 
 }
 
 h2 {
