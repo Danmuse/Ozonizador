@@ -59,6 +59,10 @@ header {
   background-color: #3b5998;
 }
 
+#list-item-cv {
+  background-color: #7c7382;
+}
+
 @media (hover) {
   .list-item-link:hover {
     border-radius: 0 3px 3px 0;
