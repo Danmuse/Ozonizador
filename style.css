@@ -59,9 +59,8 @@ header {
 }
 
 .list-item-link {
-  padding: 0.3rem;
-  width: 3rem;
-  height: 3rem;
+  width: 2.9rem;
+  height: 2.9rem;
   transition: 0.3s ease-in-out width;
   display: grid;
   place-items: center;
@@ -189,5 +188,26 @@ p {
 @media screen and (max-width: 420px) {
   .productContainer {
     width: 100%;
+  }
+  
+  .ozonoImagen {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h2:first-of-type {
+    margin-top: 0.9rem;
+  }
+
+  .list-item-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  p {
+    font-size: 0.88rem;
   }
 }
