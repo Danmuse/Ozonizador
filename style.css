@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Kumbh+Sans&display=swap');
 
 :root {
-  --HeavyText: rgb(0, 0, 0);
-  --LightText: rgb(20, 20, 20);
+  --GeneralText: rgb(20, 20, 20);
+  --HeavyText: rgb(18, 18, 18);
+  --LightText: rgb(80, 80, 80);
+  --LightTextShadow: rgba(6, 6, 6, 0.2);
+  --TextShadow: rgba(6, 6, 6, 0.6);
   --HeaderTitle: rgb(216, 216, 216);
   --Shadow: rgba(155, 152, 144, 0.8);
   --Selection: rgb(160, 186, 225);
@@ -97,18 +100,6 @@ header {
   width: 45%;
 }
 
-/* ul {
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-li {
-  margin: 0 1rem;
-}  */
-
 main {
   width: cover;
   height: cover;
@@ -160,8 +151,8 @@ h2 {
   margin: 2rem 1rem 1.3rem 1rem;
   text-align: center;
   font-size: 2rem;
-  text-shadow: -1px -1px 1px #aaa, 0px 1px 1px rgba(0, 0, 0, 0.5),
-    3px 3px 5px rgba(0, 0, 0, 0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+  text-shadow: -1px -1px 1px var(--LightText), 0px 1px 1px var(--TextShadow),
+    3px 3px 5px var(--LightTextShadow), 0px 0px 5px var(--LightTextShadow);
 }
 
 p {
@@ -194,6 +185,10 @@ p {
     width: 60%;
   }
 
+  .terapiaImagenContainer {
+    display: none;
+  }
+
   h2 {
     font-size: 1.6rem;
   }
@@ -207,7 +202,19 @@ p {
     height: 2.5rem;
   }
 
-  p {
-    font-size: 0.88rem;
+  .picturesContainer {
+    padding: 0rem 2.4rem;
   }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+@supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+	p {
+		text-align: justify;
+		-webkit-hyphens: auto; /* A día de hoy aún es necesario el prefijo para soportar a Safari */
+		hyphens: auto;
+	}
 }
