@@ -1,22 +1,47 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Kumbh+Sans&display=swap');
+
+:root {
+  --HeavyText: rgb(0, 0, 0);
+  --LightText: rgb(20, 20, 20);
+  --HeaderTitle: rgb(216, 216, 216);
+  --Shadow: rgba(155, 152, 144, 0.8);
+  --Selection: rgb(160, 186, 225);
+  --Background: rgb(249, 252, 255);
+  --BackgroundLogo: rgb(160, 210, 240);
+
+  --Weight-HeavyText: 700;
+  --Weight-BoldText: 500;
+  --Weight-LightText: 300;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html {
+html, body {
   box-sizing: inherit;
-  height: 100vh;
+  height: 99vh;
+}
+
+/* Main Containers */
+
+::selection {
+  background-color: var(--Selection);
+  color: var(--GeneralText);
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  background-color: var(--Background);
+  font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif;
   width: 100%;
+  margin: 0;
 }
 
 header {
   display: grid;
   place-items: center;
-  background: linear-gradient(to bottom, white, rgb(160, 210, 240) 50%, white);
+  background: linear-gradient(to bottom, var(--Background), var(--BackgroundLogo) 50%, var(--Background));
 }
 
 .social-sidebar {
@@ -61,14 +86,6 @@ header {
 
 #list-item-cv {
   background-color: #7c7382;
-}
-
-@media (hover) {
-  .list-item-link:hover {
-    border-radius: 0 3px 3px 0;
-    width: 4.2rem; /* Aca le cambia el width 
-    cuando está en hover */
-  }
 }
 
 .ozonoImagenContainer {
@@ -128,12 +145,6 @@ main {
   width: 100%;
 }
 
-@media (max-width: 400px) {
-  .productContainer {
-    width: 100%;
-  }
-}
-
 .productImagen {
   width: 100%;
 }
@@ -143,7 +154,7 @@ main {
 }
 
 .bigSize {
-  font-size: 1.2rem; 
+  font-size: 1rem; 
 }
 
 h2 {
@@ -158,11 +169,25 @@ p {
   padding: 0 1.2rem;
   margin: 1.2rem;
   text-align: left;
-  font-family: Helvetica, 'Times New Roman', sans-serif;
+  font-family: Manrope, Helvetica, 'Times New Roman', sans-serif;
+  font-size: 0.9rem;
   line-height: 20px;
   text-indent: 40px;
 }
 
 .bold {
   font-weight: bold;
+}
+
+@media (hover) {
+  .list-item-link:hover {
+    border-radius: 0 3px 3px 0;
+    width: 4.2rem; /* Aca le cambia el width cuando está en hover */
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .productContainer {
+    width: 100%;
+  }
 }
